@@ -1,0 +1,122 @@
+.blog {
+  color: #fff;
+  background-color: #1b1c1d;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.blog-bg-titles {
+  width: 100%;
+}
+.blog-bg-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+.blog-bg-img img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-titles {
+  position: absolute;
+  top: 0;
+  margin-top: 60px;
+  padding: 32px 64px;
+}
+@media only screen and (max-width: 667px) {
+  .blog-titles {
+    padding: 32px 16px;
+  }
+}
+.blog-title {
+  align-self: stretch;
+  color: hsla(0, 0%, 100%, 0.96);
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+.blog-title-dec {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.blog-contents {
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    gap: 20px;
+     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+}
+.blog-content {
+    flex: 1 1 350px;
+    background-color: #202327;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-content-img {
+    width: 100%;
+    object-fit: cover;
+}
+.blog-content-img img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-article-data {
+    padding: 5px 15px;
+}
+.blog-article-title {
+    margin: 5px 0 10px;
+    color: #f5f2f0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.blog-date {
+    font-weight: 700;
+}
+.blog-article-para , .blog-date{
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 24px;
+    font-weight: 500;
+    color: hsla(24, 20%, 95%, 0.59);
+}
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.blog-article-link {
+    padding: 20px;
+}
+.blog-article-link  a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
