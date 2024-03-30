@@ -1,0 +1,307 @@
+.pricing {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0c0d;
+  color: #fff;
+}
+.pricing-bgc-title {
+  width: 100%;
+  /* text-align: start; */
+}
+.pricing-bgc {
+  object-fit: cover;
+  height: 70vh;
+  width: 100%;
+}
+.pricing-bgc img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+.pricing-titles {
+  margin-bottom: 50px;
+  padding: 20px 1px;
+  text-align: start;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.pricing-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 8px 10px 10px #2b2d33;
+}
+
+.pricing-currentpage {
+  font-size: 0.9rem;
+  font-weight: 400;
+  word-spacing: 20px;
+  color: hsla(0, 0%, 100%, 0.44);
+}
+.pricing-currentpage span {
+  color: #fff;
+}
+@media screen and (max-width: 700px) {
+  .pricing-titles {
+    top: 10%;
+    left: 2%;
+  }
+}
+.pricing-details {
+  margin-top: -120px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+.plan-buttons {
+  background: hsla(0, 0%, 50%, 0.281);
+  border-radius: 96px;
+  cursor: pointer;
+  height: 44px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  padding: 28px 13px;
+}
+.plan-btn {
+  padding: 8px 20px;
+  border-radius: 96px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  display: flex;
+  background-color: #5a5b5c00;
+  border: none;
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.plan-btn.active {
+  background-color: #000000cf;
+  color: #2c79ea;
+  font-weight: 700;
+}
+
+.pricing-plans {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.pricing-plan {
+  background-color: #222429;
+  flex: 1 1 320px;
+  margin: 0 10px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.plan-title {
+  text-align: start;
+  width: 100%;
+  align-self: stretch;
+  color: hsla(0, 0%, 100%, 0.96);
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  position: relative;
+}
+.plan-title::before {
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  content: "";
+  height: 30px;
+  width: 5px;
+  border-radius: 0 5px 5px 0;
+}
+.plan-title.Free::before {
+  background: #2c79ea;
+}
+.plan-title.Basic::before {
+  background: #da8813;
+}
+.plan-title.Pro::before {
+  background: #b11e46;
+}
+.plan-title.Basic::after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  content: " Best Value";
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 7px 0 0 7px;
+  background-color: #da8813;
+}
+.plan-content {
+  width: 100%;
+  border-top: 2px solid #00000040;
+  padding: 10px;
+  text-align: center;
+  align-self: stretch;
+  color: hsla(0, 0%, 100%, 0.96);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03px;
+  overflow-wrap: break-word;
+  min-height: 50px;
+}
+.plan-content-price {
+  align-self: stretch;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.96);
+  font-size: 35px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+}
+.plan-content-price.Basic .price-plan {
+  color: #da8813;
+}
+.plan-content-price.Pro .price-plan {
+  color: #b11e46;
+}
+.price-plan-contentprice {
+  margin-top: -10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.price-plan-actualprice {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.detail-features {
+  width: 100%;
+  border-top: 2px solid #00000040;
+  border-bottom: 2px solid #00000040;
+  padding: 10px;
+}
+.subscribe-btn {
+  margin-top: 20px;
+  line-height: 1.2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+  gap: 20px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  color: hsla(0, 0%, 100%, 0.96);
+  background-color: #1d6ee3;
+}
+.subscribe-btn-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pricing-discount,
+.enterprise {
+  width: 90%;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+}
+.pricing-discount-img,
+.enterprise-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 9999px;
+  border: 2px solid hsla(0, 0%, 100%, 0.08);
+  display: grid;
+  place-items: center;
+}
+.pricing-discount-img .material-symbols-rounded,
+.enterprise-img .material-symbols-rounded {
+  font-size: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+  top: -15px;
+}
+.pricing-discount-img .material-symbols-rounded {
+  color: rgba(100, 156, 7, 0.5) !important;
+}
+.enterprise-img .material-symbols-rounded {
+  color: rgba(218, 136, 19, 0.5) !important;
+}
+.enterprise-content, .pricing-discount-content {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.enterprise-title, .pricing-discount-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+.enterprise-title-dec, .pricing-discount-title-dec {
+  width: 90%;
+  font-size: 25px;
+  font-weight: 500;
+  word-spacing: 3px;
+  word-break: 20px;
+  line-height: 30px;
+}
+.pricing-discount-title-dec b {
+  color: #da8813;
+}
+.pricing-discount-title-dec a {
+  color: #2c79ea;
+}
+.enterprise-content p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.enterprise-content .enterprise-btn {
+  flex: 1 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    align-self: stretch;
+    padding: 12px 18px;
+    border-radius: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: #1d6ee3;
+        border: none;
+        color: #fff;
+        gap: 10px;
+        
+}
+
+@media screen and (min-width:800px)  {
+  .pricing-discount,
+.enterprise {
+  grid-template-columns: 1fr 2fr;
+  padding: 20px 10px;
+}
+.enterprise-content, .pricing-discount-content, .enterprise-title, .pricing-discount-title {
+  text-align: start;
+
+}
+.enterprise {
+  grid-template-columns: 2fr 1fr;
+  padding: 20px 10px;
+}
+.enterprise-content {
+text-align: end;
+}
+.enterprise-img {
+  order: 2;
+}
+}
