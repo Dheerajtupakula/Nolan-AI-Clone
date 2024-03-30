@@ -1,0 +1,147 @@
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.Navbar.show-nav {
+  background-color: #2224299a;
+}
+@media screen and (min-width:849px) {
+  .Navbar.show-nav-toggle {
+    background-color: #222429;
+  }  
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+.toggle-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.links ul li {
+  font-weight: 400;
+  margin-right: 15px;
+  position: relative;
+}
+.links ul li::after,
+.links ul li::before {
+  color: #fff;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  transition: 0.2s linear;
+  background-color: #8d8c8cb2;
+}
+.links ul li::after {
+  transform-origin: left;
+  top: 0;
+  left: 0;
+}
+.links ul li::before {
+  transform-origin: right;
+  bottom: -3px;
+  right: 0;
+}
+.links ul li:hover:after,
+.links ul li:hover::before {
+  width: 100%;
+}
+
+.toggle-btn i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+ul li button {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.login-btn button {
+  padding: 4px 10px;
+  border-radius: 25px;
+  text-align: center;
+  width: 68px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 1px 5px 15px rgb(120, 120, 120);
+  border: none;
+}
+
+@media screen and (max-width: 850px) {
+  .Navbar {
+    padding: 10px;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #22242900;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .logo {
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .links.show {
+    display: flex;
+    background-color: #222429;
+  }
+  .links.show ul {
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+  }
+  .links ul {
+    padding: 20px;
+  }
+  .links ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .login-btn {
+    padding: 10px;
+  }
+}
