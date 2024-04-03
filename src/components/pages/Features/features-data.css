@@ -1,0 +1,180 @@
+.features-data {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1b1b;
+  color: #fff;
+  margin: 0;
+}
+.features-bgc-title {
+  width: 100%;
+}
+.features-bgc {
+  margin-top: -20px;
+  object-fit: cover;
+  height: 60vh;
+  width: 100%;
+}
+.features-bgc img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.features-titles {
+  padding: 20px 1px;
+  text-align: start;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.features-currentpage {
+  font-size: 0.8rem;
+  font-weight: 400;
+  word-spacing: 20px;
+  color: hsla(0, 0%, 100%, 0.44);
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+a {
+  color: hsla(0, 0%, 100%, 0.44);
+}
+video {
+  width: 90%;
+}
+.features-currentpage span {
+  color: #fff;
+  word-spacing: 2px;
+}
+.features-title {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 8px 10px 10px #2b2d33;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.AIScriptCoverageReporting .features-title,
+.IndustryStandardEditor .features-title {
+  font-size: 38px;
+}
+.features-title-logo {
+  width: 45px;
+  height: 45px;
+  padding: 25px;
+  background: #1d6ee3;
+  border-radius: 96px;
+  overflow: hidden;
+  border: 4px solid hsla(0, 0%, 100%, 0.08);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.AIDeckBuilder .features-title-logo {
+  background: rgb(218, 136, 19);
+}
+.AIScriptCoverageReporting .features-title-logo {
+  background: rgb(154, 33, 7);
+}
+.AIBudgeting .features-title-logo {
+      background: rgb(82, 94, 98);
+}
+.Storyboard .features-title-logo {
+  background: rgb(100, 156, 7);
+}
+.CharacterDevelopment .features-title-logo {
+  background: rgb(126, 8, 43);
+}
+.Brainstorming .features-title-logo {
+  background: rgb(218, 136, 19);
+}
+.AICopilot .features-title-logo {
+  background: rgb(131, 198, 25);
+}
+.SmartFormatting .features-title-logo {
+  background: rgb(213, 73, 39);
+}
+.PlotHoleDetectionReporting .features-title-logo {
+  background: rgb(177, 30, 70);
+}
+.IndustryStandardEditor .features-title-logo {
+  background: rgb(218, 136, 19);
+}
+.features-data-content {
+  margin-top: -180px;
+  padding: 30px 20px;
+  display: grid;
+  place-items: start;
+  text-align: start;
+}
+
+p,
+li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #f5f2f0;
+}
+li {
+  font-weight: 600;
+}
+.features-data-content img {
+  width: 100%;
+  object-fit: cover;
+}
+img {
+  margin: 20px 0px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+b {
+  font-weight: 700;
+}
+h3 {
+  text-align: start;
+  color: #f5f2f0;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+.feature-data-btn {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  align-self: stretch;
+  padding: 12px 25px;
+  border-radius: 96px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  color: hsla(0, 0%, 100%, 0.96);
+  background-color: #1d6ee3;
+  border: none;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 701px) {
+  .features-data-content {
+    max-width: 90%;
+    display: grid;
+    place-items: start;
+  }
+  .features-data-content img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .features-titles {
+    margin-left: 10px;
+  }
+  .features-title-text,
+  h3 {
+    font-size: 32px;
+  }
+}
