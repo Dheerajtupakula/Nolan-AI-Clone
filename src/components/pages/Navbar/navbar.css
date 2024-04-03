@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0 20px ;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -43,6 +43,7 @@
 }
 
 .links ul li {
+  font-size: 17px;
   font-weight: 400;
   margin-right: 15px;
   position: relative;
