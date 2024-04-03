@@ -10,6 +10,7 @@
   width: 100%;
 }
 .forstudios-bgc {
+  margin-top: -20px;
   width: 100%;
   object-fit: cover;
   height: 75vh;
