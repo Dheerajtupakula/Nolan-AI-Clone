@@ -11,6 +11,7 @@
   /* text-align: start; */
 }
 .aboutus-bgc {
+  margin-top: -20px;
   object-fit: cover;
   height: 70vh;
   width: 100%;
