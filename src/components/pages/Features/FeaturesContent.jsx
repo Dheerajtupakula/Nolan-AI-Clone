@@ -1,7 +1,14 @@
 import React from "react";
 import "./features.css";
 import featuresData from "../../Data/featuresData";
+import { Link } from "react-router-dom";
 function FeaturesContent() {
+  const toTop = () => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+  }
   return (
     <section className="features">
       <div className="features-bgc-title">
@@ -38,7 +45,7 @@ function FeaturesContent() {
                   </p>
                 </div>
               </div>
-              <a href={feature.feature_to_btn}>Explore Feature</a>
+              <Link onClick={toTop} to={feature.feature_to_btn}>Explore Feature</Link>
             </div>
           );
         })}
