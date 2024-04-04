@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px ;
   position: fixed;
   top: 0;
   left: 0;
@@ -103,9 +102,7 @@ ul li button {
 }
 
 @media screen and (max-width: 850px) {
-  .Navbar {
-    padding: 10px;
-  }
+ 
   .toggle-btn {
     display: block;
   }
