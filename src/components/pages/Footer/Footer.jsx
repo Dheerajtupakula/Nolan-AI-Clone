@@ -15,11 +15,10 @@ function Footer() {
         <div className="references">
           <div className="licence">© NolanAI,Inc. 2024</div>
           <div className="refer">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Team of Service</a>
-            <a href="#">Referral</a>
-            <a href="#">Program</a>
-            <a href="#">Releases</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Team of Service</a>
+            <a href="/referral-program">Referral program</a>
+            <a href="/releases">Releases</a>
             <a href="#">Help</a>
           </div>
         </div>
