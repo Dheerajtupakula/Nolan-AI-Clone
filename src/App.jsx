@@ -10,6 +10,7 @@ import Blog from "./components/pages/Blog/Blog";
 import CreateScript from "./components/pages/CreateScript/CreateScript";
 import MapFeatures from "./components/pages/Features/MapFeatures";
 import MapBlog from "./components/pages/Blog/MapBlog";
+import MapFooter from "./components/pages/Footer/MapFooter";
 import { Route, Routes } from "react-router";
 import { useState } from "react";
 import "./App.css";
@@ -48,6 +49,12 @@ const App = () => {
             <Route key={blog.id} path={blog.path} element={blog.path_element} />
           );
         })}
+        {MapFooter.map((item) => {
+          return (
+            <Route key={item.id} path={item.path} element={item.path_element} />
+          );
+        })}
+
       </Routes>
       <Footer />
       {showScript && (
