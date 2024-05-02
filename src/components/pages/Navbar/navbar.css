@@ -101,8 +101,30 @@ ul li button {
   box-shadow: 1px 5px 15px rgb(120, 120, 120);
   border: none;
 }
+.profile-data button{
+  background:none ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.profile-data button img {
+  width: 30px;
+  border-radius: 50%;
+}
+.profile-data button .profile-name {
+  color: #fff;
+}
 
+@media screen and (max-width: 480px) {
+  .profile-name {
+    display: none;
+  }
+}
+
+ 
 @media screen and (max-width: 850px) {
+ 
  
   .toggle-btn {
     display: block;
@@ -144,4 +166,5 @@ ul li button {
   .login-btn {
     padding: 10px;
   }
+  
 }
