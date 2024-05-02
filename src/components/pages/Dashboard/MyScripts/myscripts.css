@@ -1,0 +1,120 @@
+.myscript {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 10px;
+    background-color: #ffffffa4;
+   width: 100%;
+   border-radius: 20px;
+   padding: 20px;
+}
+.myscript-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myscript-header-title-text {
+    
+    max-width: 100%;
+    align-self: stretch;
+    color: rgba(26, 29, 36, .96);
+    font-size: 24px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.myscript-header-more .material-symbols-rounded {
+    color: #adadad;
+    cursor: pointer;
+}
+.myscript-header-more {
+    position: relative;
+}
+.more-options {
+    position: absolute;
+   bottom: 0;
+    right: 0;
+background-color: #f4f4f4;
+box-shadow: 1px 0px 10px 1px black;
+padding: 10px;
+border-radius: 10px;
+z-index: 8;
+transition: all 0.5s linear;
+}
+.more-options a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    gap: 10px;
+}
+.more-options-link-text {
+    white-space: nowrap;
+}
+.more-options a:last-child {
+    color: rgb(185, 59, 59);
+}
+.myscript-header-last-seen {
+        color: rgba(12, 14, 17, 0.44);
+    font-size: 10px;
+    align-self: stretch;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+}
+.myscript-data {
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+.myscript-data-genre ,.myscript-data-synopsis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.myscript-data-genre h6,.myscript-data-synopsis h6{
+margin-top: 10px;
+}
+.myscript-data-genre h6 p{
+    color: #000;
+}
+.myscript-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myscript-share span {
+    color: #1d6ee3;
+}
+.myscript-footer .myscript-link-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.myscript-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #1d6ee3 !important;
+    background-color: rgba(29, 110, 227, .12) !important;
+    padding: 5px 15px;
+    gap: 5px;
+}
+.myscript-link .myscript-link-text {
+    font-weight: 600;
+}
+.myscript-link span {
+    color: #1d6ee3;
+}
+@media screen and (max-width:676px) {
+    .myscript-data {
+        border-bottom: none;
+    }
+    .myscript-footer {
+        display: none;
+    }
+}
