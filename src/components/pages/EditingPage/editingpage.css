@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap');
+
+.editing-page {
+  width: 100%;
+}
+
+.editing-page-sticky-bar-home-dashboard {
+  position: sticky;
+  top: 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e9ebf2;
+  height: 60px;
+}
+.editing-page-sticky-bar-myprofile-home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.editing-page-home-btn {
+  object-fit: contain;
+}
+.editing-page-home-btn img {
+  width: 60px;
+  height: 30px;
+  mix-blend-mode: difference;
+}
+.editing-page-dashboard-btn,
+.editing-page-title-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.editing-page-dashboard-btn span,
+.editing-page-title-btn span {
+  color: #000;
+  font-size: 20px;
+}
+.editing-page-dashboard-btn-text {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+.editing-page-title-btn::before {
+  content: ">";
+  color: #8b8b8b;
+  font-size: 25px;
+}
+.editing-page-profile-btn img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.editing-page-sticky-bar-small-screens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.editing-page-sticky-bar-small-screens span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(29, 110, 227, 0.12);
+  color: #1d6ee3;
+}
+.editing-page-sticky-bar-small-screens {
+  display: none;
+}
+@media screen and (max-width: 676px) {
+  .editing-page-sticky-bar-myprofile-home-btn {
+    display: none;
+  }
+  .editing-page-sticky-bar-small-screens {
+    display: flex;
+  }
+}
+.editingpage-content {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: #dde0eb;
+  display: flex;
+  justify-content: center;
+}
+
+.editor {
+  width: min(100%, 90%);
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.editor input {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+.editor-input-content {
+  display: grid;
+  padding: 10px;
+  font-family: "Taviraj", serif;
+}
+.input-text {
+  word-wrap: break-word;
+  font-family: "Taviraj", serif;
+}
+.text-area {
+  min-height: 50vh;
+  text-decoration: none;
+  border: none !important;
+  font-style: none;
+}
+.input-text:focus {
+  padding: 1px;
+  border: none !important;
+  outline: none !important;
+}
