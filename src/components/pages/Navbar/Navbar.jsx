@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import { AuthContext } from "../../../AuthContent";
 
-function Navbar({ toggleServicesPopup }) {
+function Navbar({ toggleServicesPopup, location, isLoggedIn }) {
   const [showLinks, setShowLinks] = useState(false);
   const [onShow, setOnShow] = useState(false);
-
+  const isLogin = useContext(AuthContext);
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
       if (window.scrollY > 30) {
@@ -17,7 +18,6 @@ function Navbar({ toggleServicesPopup }) {
         window.removeEventListener("scroll");
       };
     });
-   
   });
   const toggleLinks = (event) => {
     const clickedElement = event.target;
@@ -33,7 +33,13 @@ function Navbar({ toggleServicesPopup }) {
     }
     setShowLinks(!showLinks);
   };
-
+  if (
+    location.pathname === "/dashboard" ||
+    location.pathname === "/profile" ||
+    location.pathname.includes("/editor")
+  ) {
+    return null;
+  }
   return (
     <nav
       className={`Navbar ${onShow && "show-nav"} ${showLinks && "show-nav"}`}
@@ -53,6 +59,14 @@ function Navbar({ toggleServicesPopup }) {
       <div className="nav-items">
         <div className={`links ${showLinks ? "show" : ""}`}>
           <ul>
+            {isLogin && (
+              <li>
+                <NavLink onClick={toggleLinks} to="/dashboard">
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
+
             <li>
               <NavLink onClick={toggleLinks} to="/aboutus">
                 About us
@@ -83,16 +97,29 @@ function Navbar({ toggleServicesPopup }) {
             </li>
           </ul>
         </div>
-        <div className="login-btn">
-          <NavLink to="/login" onClick={toggleLinks}>
-            <button>Login</button>
-          </NavLink>
-        </div>
+        {!isLogin && (
+          <div className="login-btn">
+            <NavLink to="/login" onClick={toggleLinks}>
+              <button>Login</button>
+            </NavLink>
+          </div>
+        )}
+        {isLogin && (
+          <div className="profile-data">
+            <NavLink to="/profile" onClick={toggleLinks}>
+              <button>
+                <img
+                  src="https://source.unsplash.com/100x100/?profile"
+                  alt=""
+                />
+                <div className="profile-name">Jhon Doe</div>
+              </button>
+            </NavLink>
+          </div>
+        )}
       </div>
     </nav>
   );
 }
 
 export default Navbar;
-
-
