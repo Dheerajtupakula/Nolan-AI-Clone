@@ -28,8 +28,7 @@
 .flex-box .bothoptionsection-head {
   color: #000000 !important;
 }
-.flex-box 
-{
+.flex-box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,7 +43,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  
 }
 .create-script-title-close {
   display: flex;
@@ -87,6 +85,37 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.suggest-titles-container {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-box {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+}
+
+.suggest-button {
+  background-color: #d0d0d0;
+  border: none;
+  cursor: no-drop;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.suggest-button:hover {
+  background-color: #c0c0c0;
+}
+
 label {
   align-self: stretch;
   cursor: pointer;
@@ -106,7 +135,8 @@ label {
   font-weight: 350;
   color: rgba(26, 29, 36, 0.96);
 }
-.video-short, .feature-film {
+.video-short,
+.feature-film {
   min-width: 550px;
   min-height: 250px;
   display: flex;
@@ -141,12 +171,13 @@ label {
   font-weight: 600;
 }
 
-.video-title ,.flim-title{
+.video-title,
+.flim-title {
   border: none;
   font-size: 1.1rem;
   color: #646464;
 }
-#video-title #flim-title{
+#video-title #flim-title {
   width: 90%;
 }
 .flim-title-suggest-btn {
@@ -158,7 +189,9 @@ label {
   border-radius: 40px;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 8px 20px;
   display: inline-block;
@@ -167,20 +200,20 @@ input[type=text], select, textarea {
   border-radius: 5px;
   box-sizing: border-box;
 }
-input[type=text]:focus, select:focus, textarea:focus{
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
   outline: none;
   border: 2px solid #1d70e393;
 }
-
 
 select {
   appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 30 40" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>');
   background-repeat: no-repeat;
   background-position: right 5px center;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
-
 
 /*dafugdvsfgsudgbsboubgfdjbvgxj--------------------------------------*/
 .create-script-cancel-next {
@@ -209,7 +242,8 @@ select {
 button {
   border: none;
 }
-.create-script-next-btn, .create-script-submit {
+.create-script-next-btn,
+.create-script-submit {
   display: flex;
   cursor: pointer;
   padding: 12px;

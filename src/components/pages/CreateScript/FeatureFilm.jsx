@@ -79,6 +79,14 @@ const FeatureFilm = ({ toggleShowScript, backButton }) => {
             required
           />
         </div>
+        <div className="suggest-titles-container">
+          <span className="input-box">
+            Suggest titles based on the synopsis
+          </span>
+          <button className="suggest-button" disabled>
+            Suggest titles
+          </button>
+        </div>
         <div className="create-script-input">
           <label className="flim-title" htmlFor="flimTitleDec">
             Title Description:
