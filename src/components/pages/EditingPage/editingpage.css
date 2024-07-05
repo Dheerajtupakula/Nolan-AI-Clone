@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .editing-page {
   width: 100%;
@@ -104,11 +104,11 @@
 .editor-input-content {
   display: grid;
   padding: 10px;
-  font-family: "Taviraj", serif;
+  font-family: "Courier Prime", monospace;
 }
 .input-text {
   word-wrap: break-word;
-  font-family: "Taviraj", serif;
+  font-family: "Courier Prime", monospace;
 }
 .text-area {
   min-height: 50vh;
