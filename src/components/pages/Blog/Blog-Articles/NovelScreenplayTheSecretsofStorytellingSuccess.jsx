@@ -13,7 +13,7 @@ const NovelScreenplayTheSecretsofStorytellingSuccess = () => {
         article_data={blogData[15].blog_datetime}
       />
       <div className="blog-data-content">
-        <div class="BlogSingleContent_container__HAy9_">
+        <div className="BlogSingleContent_container__HAy9_">
           <p>
             Converting a beloved novel into a captivating screenplay is a
             thrilling yet daunting task.&nbsp;It's like breathing life into your

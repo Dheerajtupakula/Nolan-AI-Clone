@@ -25,7 +25,7 @@ function ForStudios() {
       <div className="forstudios-head-contents">
         <div className="forstudios-head-content">
           <div className="forstudios-head-img">
-            <span class="material-symbols-rounded">psychology</span>
+            <span className="material-symbols-rounded">psychology</span>
           </div>
           <div className="forstudios-head">
             <h3 className="forstudios-head-title">All-in-One Editor</h3>
@@ -39,7 +39,7 @@ function ForStudios() {
         </div>
         <div className="forstudios-head-content">
           <div className="forstudios-head-img">
-            <span class="material-symbols-rounded">analytics</span>
+            <span className="material-symbols-rounded">analytics</span>
           </div>
           <div className="forstudios-head">
             <h3 className="forstudios-head-title">
@@ -55,7 +55,7 @@ function ForStudios() {
         </div>
         <div className="forstudios-head-content">
           <div className="forstudios-head-img">
-            <span class="material-symbols-rounded">waving_hand</span>
+            <span className="material-symbols-rounded">waving_hand</span>
           </div>
           <div className="forstudios-head">
             <h3 className="forstudios-head-title">

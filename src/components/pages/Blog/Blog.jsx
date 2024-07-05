@@ -14,7 +14,7 @@ function Blog() {
       <div className="blog-bg-titles">
         <div className="blog-bg-img">
           <img
-            src="https://www.nolanai.app/_next/image?url=%2Fimages%2Fhero-img-landing-main%20copy.webp&w=1200&q=75"
+            src="https://www.nolanai.app/_next/image?url=%2Fimages%2Fhero-img-for-studios.webp&w=1200&q=75"
             alt=""
           />
           <div className="blog-titles">
@@ -40,7 +40,9 @@ function Blog() {
                 </div>
               </div>
               <div className="blog-article-link">
-                <a onClick={toTop} href={blog.blog_article_link}>Read article</a>
+                <a onClick={toTop} href={blog.blog_article_link}>
+                  Read article
+                </a>
               </div>
             </div>
           );

@@ -13,7 +13,7 @@ function FreeScriptingPowerCeltxWriterDuetNolanAIUnleashed() {
         article_data={blogData[7].blog_datetime}
       />
       <div className="blog-data-content">
-        <div class="BlogSingleContent_container__HAy9_">
+        <div className="BlogSingleContent_container__HAy9_">
           <p>
             Embarking on the exciting journey of{" "}
             <a href="/">script writing</a> doesn't have

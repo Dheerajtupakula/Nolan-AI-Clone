@@ -11,7 +11,7 @@ const TermsofService = () => {
         <h1 className="footer-privacy-title">Terms of Use</h1>
       </div>
       <div className="footer-privacy-content">
-        <div class="TermsOfService_paragraph__VMXH9">
+        <div className="TermsOfService_paragraph__VMXH9">
           <p>
             Welcome to NolanAI! These Terms of Use ("Terms") govern your access
             to and use of the NolanAI website, services, and subscription plans

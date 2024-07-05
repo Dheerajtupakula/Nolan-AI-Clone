@@ -20,7 +20,7 @@ function Aboutus() {
           <h1 className="aboutus-title">About Us</h1>
         </div>
       </div>
-      <div class="aboutus-content">
+      <div className="aboutus-content">
         <h3>Our mission</h3>
         <p>
           Welcome to NolanAI, the AI-driven All in one tool for film industry

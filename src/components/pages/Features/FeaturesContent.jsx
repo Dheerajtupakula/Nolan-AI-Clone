@@ -14,7 +14,7 @@ function FeaturesContent() {
       <div className="features-bgc-title">
         <div className="features-bgc">
           <img
-            src="https://www.nolanai.app/_next/image?url=%2Fimages%2FaboutUs.webp&w=1200&q=75"
+            src="https://www.nolanai.app/_next/image?url=%2Fimages%2Fhero-img-for-studios.webp&w=1200&q=75"
             alt=""
             className="img-fluid"
           />
@@ -45,7 +45,9 @@ function FeaturesContent() {
                   </p>
                 </div>
               </div>
-              <Link onClick={toTop} to={feature.feature_to_btn}>Explore Feature</Link>
+              <Link onClick={toTop} to={feature.feature_to_btn}>
+                Explore Feature
+              </Link>
             </div>
           );
         })}

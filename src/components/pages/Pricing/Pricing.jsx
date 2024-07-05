@@ -106,13 +106,13 @@ function Pricing() {
           ))}
         </div>
       </div>
-      <div class="pricing-discount">
-        <div class="pricing-discount-img">
+      <div className="pricing-discount">
+        <div className="pricing-discount-img">
           <span className="material-symbols-rounded">school</span>
         </div>
-        <div class="pricing-discount-content">
-          <h1 class="pricing-discount-title">For Students - 50% discount</h1>
-          <h3 class="pricing-discount-title-dec">
+        <div className="pricing-discount-content">
+          <h1 className="pricing-discount-title">For Students - 50% discount</h1>
+          <h3 className="pricing-discount-title-dec">
             Student Exclusive:
             <b> Get a 50% discount on our annual subscription! </b>
             Email us at
@@ -126,17 +126,17 @@ function Pricing() {
           </h3>
         </div>
       </div>
-      <div class="enterprise">
-        <div class="enterprise-img">
+      <div className="enterprise">
+        <div className="enterprise-img">
           <span className="material-symbols-rounded">recent_actors</span>
         </div>
-        <div class="enterprise-content">
-          <h1 class="enterprise-title">Enterprise</h1>
-          <h3 class="enterprise-title-dec">
+        <div className="enterprise-content">
+          <h1 className="enterprise-title">Enterprise</h1>
+          <h3 className="enterprise-title-dec">
             Didn’t find the options you were looking for? If you’re a large team
             looking for a custom solution, we’ve got you covered!
           </h3>
-          <p class="enterprise-para">
+          <p className="enterprise-para">
             All features unlimited in Pro plan and custom solutions
           </p>
           <NavLink to="/forstudios">
