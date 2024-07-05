@@ -80,13 +80,13 @@
   width: 30px;
   height: 30px;
 }
-.profile-btn img{
+.profile-btn img {
   margin: 0;
   border-radius: 30px;
-width: 100%;
+  width: 100%;
 }
 
-@media screen and (max-width:676px) {
+@media screen and (max-width: 676px) {
   .upgrade-btn {
     display: none;
   }
@@ -120,9 +120,8 @@ width: 100%;
   font-weight: 500;
 }
 
-
 .dashboard-content-banners {
- padding: 10px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -171,7 +170,6 @@ width: 100%;
   gap: 10px;
 }
 .dashboard-content-banner-text p {
-
   color: #000;
   color: #5f5f5f !important;
 }
@@ -186,7 +184,6 @@ width: 100%;
   margin-bottom: -10px;
 }
 .dashboard-content-banner-textwapper p {
-
   font-size: 15px;
   line-height: 18px;
 }
@@ -229,8 +226,8 @@ width: 100%;
   padding: 20px;
   z-index: 10;
 }
-@media screen and (min-width:1250px) {
+@media screen and (min-width: 1250px) {
   .dashboard-content {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

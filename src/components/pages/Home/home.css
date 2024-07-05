@@ -15,8 +15,9 @@
   object-fit: cover;
 }
 .home-titles {
+ 
   padding: 16px;
-  top: 180px;
+  top: 300px;
   position: absolute;
   padding-left: 64px;
   max-width: 95%;
@@ -156,7 +157,7 @@
   }
 }
 .secure {
-  background: #191b1f;
+  background: #191b1f00;
   width: 100%;
   height: 100%;
   padding: 54px;
